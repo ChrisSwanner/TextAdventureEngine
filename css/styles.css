@@ -1,0 +1,275 @@
+body {
+  background-color: black;
+  background-image: url(../img/steel.jpg);
+}
+
+.container {
+  padding-top: 100px;
+}
+
+.systemText, #nameDisplay  {
+  color:lightgreen;
+  font-family: 'VT323', monospace;
+  -webkit-animation: flicker3 3.5s infinite;
+}
+
+.mapTitle {
+  text-align: center;
+}
+
+#bed {
+  position: relative;
+  right: 100px;
+}
+
+#map {
+  display: block;
+  max-width: 600px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#userNamePanel, #userInputSubmit, #userNameBtn, #startGameBtn, #gameLog, #credits, #commandsList, #gameOverPanel, #winPanel, #mapDiv, #gameTextPanel   {
+  display: none;
+}
+
+#gameLog {
+  color:lightgreen;
+  font-family: 'VT323', monospace;
+  font-size: 25px;
+}
+
+.gamePanel {
+  height: 768px;
+  width: 1024;
+  border-radius: 30px;
+  background-size: cover;
+  background-image: url(../img/computerScreen.jpg);
+  box-shadow: 0px 0px 60px #1de054;
+  border: lightgreen;
+  position: relative;
+}
+
+#titlePanel {
+  background-image: url(../img/giphy.gif);
+}
+
+#titleText, #titleSubText {
+  -webkit-animation: flicker1 5s infinite;
+  display: block;
+  position: relative;
+  top: 300px;
+  font-family: 'Press Start 2P';
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+  color: lightgreen;
+  text-shadow: 0px 0px 60px black;
+}
+
+#titleSubText {
+  -webkit-animation: flicker2 5s infinite;
+  font-size: 30px;
+}
+
+ #winText, #gameOverText, #win, #gameOver, .credits{
+   -webkit-animation: flicker3 5s infinite;
+   display: block;
+   position: relative;
+   top: 150px;
+   font-family: 'Press Start 2P';
+   font-size: 60px;
+   font-weight: bold;
+   text-align: center;
+   color: lightgreen;
+   text-shadow: 0px 0px 60px black;
+ }
+
+  #gameOver {
+    -webkit-animation: flicker2 5s infinite;
+    font-size: 90px;
+  }
+
+ #winText, #gameOverText {
+   -webkit-animation: flicker3 5s infinite;
+   font-size: 15px;
+ }
+
+#winPanel {
+  background-image: url(../img/win1.jpg);
+  box-shadow: 0px 0px 60px #597aff;
+}
+
+#gameOverPanel {
+  background-image: url(../img/computerScreenRed.jpg);
+  box-shadow: 0px 0px 60px red;
+}
+
+.btn {
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 40px;
+  width: 198px;
+  height: 77px;
+  border: none;
+  margin-right: 26px;
+}
+
+.btn:active, .btn:hover, .btn:focus  {
+  color: white;
+  outline: none;
+}
+
+#logBtn {
+  float: left;
+  background-image: url(../img/LogButtonRedOff.jpg);
+}
+
+#logBtn:active {
+  background-image: url(../img/LogButtonRed.jpg);
+  box-shadow: 0px 0px 40px red;
+  outline: none;
+}
+
+#creditsBtn {
+  background-image: url(../img/ButtonGreenOff.jpg);
+}
+
+#creditsBtn:active {
+  background-image: url(../img/ButtonGreen.jpg);
+  box-shadow: 0px 0px 40px green;
+  outline: none;
+}
+
+#restartBtn {
+  background-image: url(../img/ButtonYellowOff.jpg);
+}
+
+#restartBtn:active {
+  background-image: url(../img/ButtonYellow.jpg);
+  box-shadow: 0px 0px 40px yellow;
+  outline: none;
+}
+
+#mapBtn {
+  background-image: url(../img/ButtonBlueOff.jpg);
+}
+
+#mapBtn:active {
+  background-image: url(../img/ButtonBlue.jpg);
+  box-shadow: 0px 0px 40px blue;
+  outline: none;
+}
+
+.logBox {
+  height: 668px;
+  width: 1000;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: lightgreen;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,255,0,0.5);
+}
+
+::-webkit-scrollbar-corner {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+}
+
+#user, #userInput, #userInputText, #userName, #startGameForm, #startGame {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 8px;
+  margin-left: 30px;
+  color: lightgreen;
+  background-color: inherit;
+  width: 300px;
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+  border: none;
+}
+
+.console {
+  position: absolute;
+  bottom: 0;
+  font-family: 'VT323', monospace;
+  color: lightgreen;
+  font-size: 30px;
+}
+
+#commands {
+  font-family: 'VT323', monospace;
+  color: lightgreen;
+  font-size: 27px;
+}
+
+p, li, h5 {
+  font-family: 'VT323', monospace;
+  color: lightgreen;
+  font-size: 30px;
+}
+
+#userInputText:focus, #userName:focus, #startGame:focus {
+  outline: none;
+}
+
+.stage2 {
+  background-image: url(../img/steel2.jpg);
+}
+
+.stage3 {
+  background-image: url(../img/steel3.jpg);
+}
+
+.stage4 {
+  background-image: url(../img/steel4.jpg);
+}
+
+.stage5 {
+  background-image: url(../img/steel5.jpg);
+}
+
+@-webkit-keyframes flicker1
+{
+0% {opacity:1;}
+9% {opacity:0;}
+10% {opacity:1;}
+13% {opacity:0;}
+20% {opacity:1;}
+25% {opacity:0;}
+50% {opacity:1;}
+75% {opacity:1;}
+}
+
+@-webkit-keyframes flicker2
+{
+0% {opacity:0;}
+9% {opacity:0;}
+10% {opacity:1;}
+13% {opacity:0;}
+20% {opacity:1;}
+25% {opacity:0;}
+50% {opacity:1;}
+75% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes flicker3
+{
+0% {opacity:1;}
+25% {opacity:0.5;}
+50% {opacity:1;}
+75% {opacity:0.75;}
+}

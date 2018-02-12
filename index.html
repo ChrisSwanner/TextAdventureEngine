@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiko|Press+Start+2P|VT323" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/objects.js"></script>
+    <script src="js/commands.js"></script>
+    <script src="js/globalvar.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+    window.onload = maxWindow;
+
+    function maxWindow() {
+        window.moveTo(0, 0);
+
+
+        if (document.all) {
+            top.window.resizeTo(screen.availWidth, screen.availHeight);
+        }
+
+        else if (document.layers || document.getElementById) {
+            if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
+                top.window.outerHeight = screen.availHeight;
+                top.window.outerWidth = screen.availWidth;
+            }
+        }
+    }
+
+</script>
+    <title>
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="titlePanel" class="panel panel-info gamePanel">
+        <div class="panel-body">
+          <h1 id="titleText" class="logo">Logo Goes Here</h1>
+          <h2 id="titleSubText">PRESS ENTER</h2>
+          <form id="startGameForm" autocomplete="off">
+            <p class="console">:></p>
+            <input type="text" id="startGame" autofocus="autofocus">
+            <button id="startGameBtn" type="btn" type="submit" name="button"></button>
+          </form>
+        </div>
+      </div>
+      <div id="userNamePanel" class="panel gamePanel">
+        <div class="panel-body">
+          <h1 class="systemText">Intro Splash Sreen</h2>
+            <ul class="systemText">
+            </ul>
+            <p class="systemText">User Name Input</p>
+          <form id="user" autocomplete="off">
+            <p class="console">:></p>
+            <input type="text" id="userName" placeholder="ENTER USERNAME" autofocus="autofocus">
+            <button id="userNameBtn" type="btn btn-info" type="submit" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div id="gameTextPanel" class="panel gamePanel">
+        <div class="panel-body">
+          <h3 id="nameDisplay"></h3>
+          <h5 id="textBox" class="systemText"></h5>
+          <div class="logBox systemText">
+            <ul id="gameLog">
+            </ul>
+            <ul id="credits">
+              <p>Credits:</p>
+            <p>**Copyright (c) 2018**</p>
+            </ul>
+            <div id="mapDiv">
+              <h2 class="mapTitle">Map Title</h2>
+              <img id="map" src="" alt="room map">
+              <p>Map Goes Here</p>
+              <p class="mapTitle">Map Title Info</p>
+            </div>
+          </div>
+          <form id="userInput" autocomplete="off">
+            <p class="console">:></p>
+            <input id="userInputText" type="text" placeholder="ENTER COMMAND" autofocus="autofocus">
+            <button id="userInputSubmit" class="btn btn-info" type="submit" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- Win panel -->
+      <div id="winPanel" class="panel gamePanel">
+        <div class="panel-body">
+          <h3 id="win">Congratulations, you made it!</h3>
+          <h5 id="winText">WIN TEXT GOES HERE</h5>
+        </div>
+      </div>
+      <!-- End Win Panel -->
+
+      <!-- Lose Panel -->
+      <div id="gameOverPanel" class="panel gamePanel">
+        <div class="panel-body">
+          <h2 id="gameOver">Game Over</h2>
+            <h5 id="gameOverText">GAME OVER TEXT GOES HERE</h5>
+        </div>
+      </div>
+      <!-- End Lose Panel -->
+      <p id="commands">COMMANDS: Go to Sleep / Walk to ____ / Look in ____ / Open ____ / Push Button / etc</p>
+      <button id="logBtn" class="btn" type="button" name="Log">LOG</button>
+      <button id="restartBtn" class="btn" type="button" name="Log">RESTART</button>
+      <button id="creditsBtn" class="btn" type="button" name="Log">CREDITS</button>
+      <button id="mapBtn" class="btn" type="button" name="Log">MAP</button>
+    </div>
+  </body>
+</html>
